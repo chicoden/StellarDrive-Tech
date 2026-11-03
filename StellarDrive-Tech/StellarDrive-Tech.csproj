@@ -16,556 +16,556 @@
 
 	<ItemGroup>
 		<Reference Include="AmplifyImpostors.Runtime">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\AmplifyImpostors.Runtime.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\AmplifyImpostors.Runtime.dll</HintPath>
 		</Reference>
 		<Reference Include="Assembly-CSharp">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Assembly-CSharp.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Assembly-CSharp.dll</HintPath>
 		</Reference>
 		<Reference Include="Audio">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Audio.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Audio.dll</HintPath>
 		</Reference>
 		<Reference Include="Audio.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Audio.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Audio.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="Autodesk.Fbx.BuildTestAssets">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Autodesk.Fbx.BuildTestAssets.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Autodesk.Fbx.BuildTestAssets.dll</HintPath>
 		</Reference>
 		<Reference Include="Autodesk.Fbx">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Autodesk.Fbx.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Autodesk.Fbx.dll</HintPath>
 		</Reference>
 		<Reference Include="CablesMesh">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\CablesMesh.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\CablesMesh.dll</HintPath>
 		</Reference>
 		<Reference Include="com.rlabrecque.steamworks.net">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
 		</Reference>
 		<Reference Include="Core">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Core.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Core.dll</HintPath>
 		</Reference>
 		<Reference Include="EditorAttributes">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\EditorAttributes.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\EditorAttributes.dll</HintPath>
 		</Reference>
 		<Reference Include="FishNet.CodeAnalysis">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\FishNet.CodeAnalysis.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\FishNet.CodeAnalysis.dll</HintPath>
 		</Reference>
 		<Reference Include="FishNet.Runtime">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\FishNet.Runtime.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\FishNet.Runtime.dll</HintPath>
 		</Reference>
 		<Reference Include="FMODUnity">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\FMODUnity.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\FMODUnity.dll</HintPath>
 		</Reference>
 		<Reference Include="FMODUnityHaptics">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\FMODUnityHaptics.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\FMODUnityHaptics.dll</HintPath>
 		</Reference>
 		<Reference Include="FMODUnityResonance">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\FMODUnityResonance.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\FMODUnityResonance.dll</HintPath>
 		</Reference>
 		<Reference Include="Galaxy">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Galaxy.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Galaxy.dll</HintPath>
 		</Reference>
 		<Reference Include="Galaxy.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Galaxy.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Galaxy.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="GameKit.Dependencies">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\GameKit.Dependencies.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\GameKit.Dependencies.dll</HintPath>
 		</Reference>
 		<Reference Include="GPUInstancer">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\GPUInstancer.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\GPUInstancer.dll</HintPath>
 		</Reference>
 		<Reference Include="Items">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Items.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Items.dll</HintPath>
 		</Reference>
 		<Reference Include="Items.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Items.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Items.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="Items.Model">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Items.Model.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Items.Model.dll</HintPath>
 		</Reference>
 		<Reference Include="LeanTween">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\LeanTween.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\LeanTween.dll</HintPath>
 		</Reference>
 		<Reference Include="Managers.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Managers.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Managers.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="MKEdgeDetection">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\MKEdgeDetection.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\MKEdgeDetection.dll</HintPath>
 		</Reference>
 		<Reference Include="MKEdgeDetectionComponents">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\MKEdgeDetectionComponents.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\MKEdgeDetectionComponents.dll</HintPath>
 		</Reference>
 		<Reference Include="MKEdgeDetectionExamples">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\MKEdgeDetectionExamples.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\MKEdgeDetectionExamples.dll</HintPath>
 		</Reference>
 		<Reference Include="MKEdgeDetectionSelectiveMaskModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\MKEdgeDetectionSelectiveMaskModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\MKEdgeDetectionSelectiveMaskModule.dll</HintPath>
 		</Reference>
 		<Reference Include="MKEdgeDetectionUniversalRendererFeature">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\MKEdgeDetectionUniversalRendererFeature.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\MKEdgeDetectionUniversalRendererFeature.dll</HintPath>
 		</Reference>
 		<Reference Include="MKEdgeDetectionUniversalVolumeComponent">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\MKEdgeDetectionUniversalVolumeComponent.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\MKEdgeDetectionUniversalVolumeComponent.dll</HintPath>
 		</Reference>
 		<Reference Include="Newtonsoft.Json">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Newtonsoft.Json.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Newtonsoft.Json.dll</HintPath>
 		</Reference>
 		<Reference Include="Patterns">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Patterns.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Patterns.dll</HintPath>
 		</Reference>
 		<Reference Include="Patterns.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Patterns.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Patterns.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="Planets">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Planets.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Planets.dll</HintPath>
 		</Reference>
 		<Reference Include="Planets.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Planets.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Planets.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="Players">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Players.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Players.dll</HintPath>
 		</Reference>
 		<Reference Include="Players.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Players.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Players.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="QuickOutline">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\QuickOutline.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\QuickOutline.dll</HintPath>
 		</Reference>
 		<Reference Include="Rendering">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Rendering.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Rendering.dll</HintPath>
 		</Reference>
 		<Reference Include="Research">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Research.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Research.dll</HintPath>
 		</Reference>
 		<Reference Include="Research.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Research.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Research.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="Saving">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Saving.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Saving.dll</HintPath>
 		</Reference>
 		<Reference Include="Saving.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Saving.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Saving.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="Saving.Migration">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Saving.Migration.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Saving.Migration.dll</HintPath>
 		</Reference>
 		<Reference Include="Saving.Serialization">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Saving.Serialization.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Saving.Serialization.dll</HintPath>
 		</Reference>
 		<Reference Include="Ships">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Ships.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Ships.dll</HintPath>
 		</Reference>
 		<Reference Include="Ships.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Ships.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Ships.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="Stars">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Stars.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Stars.dll</HintPath>
 		</Reference>
 		<Reference Include="Stars.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Stars.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Stars.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="SynapseSocket">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\SynapseSocket.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\SynapseSocket.dll</HintPath>
 		</Reference>
 		<Reference Include="Tools">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Tools.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Tools.dll</HintPath>
 		</Reference>
 		<Reference Include="Tools.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Tools.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Tools.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="UI">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UI.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UI.dll</HintPath>
 		</Reference>
 		<Reference Include="UI.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UI.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UI.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Addressables">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Addressables.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Addressables.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.AI.Navigation">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.AI.Navigation.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.AI.Navigation.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Burst">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Burst.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Burst.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Burst.Unsafe">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Burst.Unsafe.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Burst.Unsafe.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Collections">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Collections.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Collections.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Collections.LowLevel.ILSupport">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Formats.Fbx.Runtime">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Formats.Fbx.Runtime.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Formats.Fbx.Runtime.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.InputSystem">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.InputSystem.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.InputSystem.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.InputSystem.ForUI">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.InputSystem.ForUI.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.InputSystem.ForUI.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.InternalAPIEngineBridge.004">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.InternalAPIEngineBridge.004.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.InternalAPIEngineBridge.004.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.InternalAPIEngineBridge.013">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.InternalAPIEngineBridge.013.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.InternalAPIEngineBridge.013.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Jobs">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Jobs.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Jobs.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Localization">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Localization.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Localization.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Mathematics">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Mathematics.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Mathematics.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.MemoryProfiler">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.MemoryProfiler.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.MemoryProfiler.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Multiplayer.Center.Common">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Multiplayer.Center.Common.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Multiplayer.Center.Common.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Profiling.Core">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Profiling.Core.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Profiling.Core.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Recorder.Base">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Recorder.Base.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Recorder.Base.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Recorder">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Recorder.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Recorder.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.RenderPipelines.Core.Runtime">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.RenderPipelines.Core.Runtime.Shared">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.RenderPipelines.Universal.Runtime">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.RenderPipelines.Universal.Shaders">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.ResourceManager">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.ResourceManager.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.ResourceManager.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.ScriptableBuildPipeline">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.ScriptableBuildPipeline.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.ScriptableBuildPipeline.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Splines">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Splines.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Splines.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.TextMeshPro">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.TextMeshPro.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Timeline">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Timeline.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.Timeline.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.UnifiedRayTracing.Runtime">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.UnifiedRayTracing.Runtime.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.UnifiedRayTracing.Runtime.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.VisualEffectGraph.Runtime">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\Unity.VisualEffectGraph.Runtime.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.AccessibilityModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.AdaptivePerformanceModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AdaptivePerformanceModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AdaptivePerformanceModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.AIModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AIModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.AMDModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AMDModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AMDModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.AndroidJNIModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.AnimationModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.ARModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ARModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ARModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.AssetBundleModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.AudioModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.ClothModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ClothModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ClothModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.ClusterInputModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.ClusterRendererModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.ContentLoadModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ContentLoadModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ContentLoadModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.CoreModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.CrashReportingModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.DirectorModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.DSPGraphModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.GameCenterModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.GameCenterModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.GIModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.GIModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.GIModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.GraphicsStateCollectionSerializerModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.GraphicsStateCollectionSerializerModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.GraphicsStateCollectionSerializerModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.GridModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.GridModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.GridModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.HierarchyCoreModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.HierarchyCoreModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.HierarchyCoreModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.HierarchyModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.HierarchyModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.HierarchyModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.HotReloadModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.HotReloadModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.HotReloadModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.IdentifiersModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.IdentifiersModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.IdentifiersModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.ImageConversionModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.IMGUIModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.InputForUIModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.InputForUIModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.InputForUIModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.InputLegacyModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.InputModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.InputModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.InsightsModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.InsightsModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.InsightsModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.JSONSerializeModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.LocalizationModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.LocalizationModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.MarshallingModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.MarshallingModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.MarshallingModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.MultiplayerModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.MultiplayerModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.MultiplayerModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.NVIDIAModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.NVIDIAModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.NVIDIAModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.ParticleSystemModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.PerformanceReportingModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.Physics2DModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.PhysicsBackendPhysXModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.PhysicsBackendPhysXModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.PhysicsBackendPhysXModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.PhysicsModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.PropertiesModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.PropertiesModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.PropertiesModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.RenderAs2DModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.RenderAs2DModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.RenderAs2DModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.ScreenCaptureModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.ShaderRuntimeModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ShaderRuntimeModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ShaderRuntimeModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.ShaderVariantAnalyticsModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ShaderVariantAnalyticsModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.ShaderVariantAnalyticsModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.SharedInternalsModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.SpriteMaskModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.SpriteShapeModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.StreamingModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.StreamingModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.StreamingModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.SubstanceModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.SubstanceModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.SubstanceModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.SubsystemsModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.TerrainModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.TerrainPhysicsModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.TextCoreFontEngineModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.TextCoreTextEngineModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.TextRenderingModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.TilemapModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.TLSModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.TLSModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.TLSModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UI">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UI.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UI.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UIElementsModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UIModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UIModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UmbraModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UmbraModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UmbraModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UnityAnalyticsCommonModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UnityAnalyticsModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UnityConnectModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UnityConsentModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityConsentModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityConsentModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UnityCurlModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UnityWebRequestAudioModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UnityWebRequestModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UnityWebRequestTextureModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UnityWebRequestWWWModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.VectorGraphicsModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.VectorGraphicsModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.VectorGraphicsModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.VehiclesModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.VehiclesModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.VFXModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.VideoModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.VirtualTexturingModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.VirtualTexturingModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.VirtualTexturingModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.VRModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.VRModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.VRModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.WindModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.WindModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.WindModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.XRModule">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.XRModule.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\UnityEngine.XRModule.dll</HintPath>
 		</Reference>
 		<Reference Include="WorldEffects">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\WorldEffects.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\WorldEffects.dll</HintPath>
 		</Reference>
 		<Reference Include="WorldEffects.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\WorldEffects.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\WorldEffects.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="WorldNetworking">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\WorldNetworking.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\WorldNetworking.dll</HintPath>
 		</Reference>
 		<Reference Include="WorldObjects">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\WorldObjects.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\WorldObjects.dll</HintPath>
 		</Reference>
 		<Reference Include="WorldObjects.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\WorldObjects.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\WorldObjects.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="WorldProvision">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\WorldProvision.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\WorldProvision.dll</HintPath>
 		</Reference>
 		<Reference Include="WorldProvision.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\WorldProvision.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\WorldProvision.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="WorldTracking">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\WorldTracking.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\WorldTracking.dll</HintPath>
 		</Reference>
 		<Reference Include="WorldTracking.Interface">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\StellarDrive_Data\Managed\WorldTracking.Interface.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\StellarDrive_Data\Managed\WorldTracking.Interface.dll</HintPath>
 		</Reference>
 		<Reference Include="MelonLoader">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\MelonLoader\net35\MelonLoader.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\MelonLoader\net35\MelonLoader.dll</HintPath>
 		</Reference>
 		<Reference Include="0Harmony">
-			<HintPath>C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\MelonLoader\net35\0Harmony.dll</HintPath>
+			<HintPath>$(ProjectDir)..\StellarDrive Demo\MelonLoader\net35\0Harmony.dll</HintPath>
 		</Reference>
 
 	</ItemGroup>
@@ -579,8 +579,13 @@
 	<ItemGroup>
 		<Compile Include="Core.cs" />
 	</ItemGroup>
-	
+
+	<ItemGroup>
+	  <PackageReference Include="Wasmtime" Version="48.0.2" />
+	</ItemGroup>
+
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<Exec Command="COPY &quot;$(TargetPath)&quot; &quot;C:\Users\Pytho\Projects\StellarDrive-Tech\StellarDrive Demo\Mods&quot;" />
+		<Exec Command="COPY &quot;$(TargetPath)&quot; &quot;$(ProjectDir)..\StellarDrive Demo\Mods&quot;" />
+        <Exec Command="python &quot;$(ProjectDir)copy_userlibs.py&quot;" />
 	</Target>
 </Project>

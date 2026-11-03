@@ -21,51 +21,85 @@ namespace StellarDrive_Tech
 
             string projectRoot = Path.Combine(Application.persistentDataPath, "programs/hello");
 
+            using (
+                Process proc = Process.Start(
+                    new ProcessStartInfo()
+                    {
+                        CreateNoWindow = true,
+                        UseShellExecute = false,
+                        RedirectStandardError = true,
+                        WorkingDirectory = projectRoot,
+                        FileName = _compilerPath,
+                        Arguments = "--target=wasm32 -fno-exceptions -nostdlibinc -nostdinc -nostdlib -c hello.cpp -o hello.o"
+                    }
+                )
+            )
             {
-                ProcessStartInfo startInfo = new();
-                startInfo.CreateNoWindow = true;
-                startInfo.UseShellExecute = false;
-                startInfo.RedirectStandardError = true;
-                startInfo.WorkingDirectory = projectRoot;
-                startInfo.FileName = _compilerPath;
-                startInfo.Arguments = "--target=wasm32 -fno-exceptions -nostdlibinc -nostdinc -nostdlib -c hello.cpp -o hello.o";
-                using (Process proc = Process.Start(startInfo))
-                {
-                    proc.WaitForExit();
-                    LoggerInstance.Msg(proc.StandardError.ReadToEnd());
-                    LoggerInstance.Msg("compiler exited with code " + proc.ExitCode.ToString());
-                }
+                proc.WaitForExit();
+                LoggerInstance.Msg(proc.StandardError.ReadToEnd());
+                LoggerInstance.Msg("compiler exited with code " + proc.ExitCode.ToString());
             }
 
+            using (
+                Process proc = Process.Start(
+                    new ProcessStartInfo()
+                    {
+                        CreateNoWindow = true,
+                        UseShellExecute = false,
+                        RedirectStandardError = true,
+                        WorkingDirectory = projectRoot,
+                        FileName = _linkerPath,
+                        Arguments = "hello.o --no-entry --export=setup --export=loop --initial-memory=131072 --no-growable-memory -o hello.wasm"
+                    }
+                )
+            )
             {
-                ProcessStartInfo startInfo = new();
-                startInfo.CreateNoWindow = true;
-                startInfo.UseShellExecute = false;
-                startInfo.RedirectStandardError = true;
-                startInfo.WorkingDirectory = projectRoot;
-                startInfo.FileName = _linkerPath;
-                startInfo.Arguments = "hello.o --no-entry --export=start --export=loop --initial-memory=131072 --no-growable-memory -o hello.wasm";
-                using (Process proc = Process.Start(startInfo))
-                {
-                    proc.WaitForExit();
-                    LoggerInstance.Msg(proc.StandardError.ReadToEnd());
-                    LoggerInstance.Msg("linker exited with code " + proc.ExitCode.ToString());
-                }
+                proc.WaitForExit();
+                LoggerInstance.Msg(proc.StandardError.ReadToEnd());
+                LoggerInstance.Msg("linker exited with code " + proc.ExitCode.ToString());
             }
 
-            Engine engine = new();
+            Engine engine = new(
+                new Config()
+                    .WithEpochInterruption(true)
+            );
+
             Module module = Module.FromFile(engine, Path.Combine(projectRoot, "hello.wasm"));
+
             Memory memory = null;
-            Store store = new(engine);
             Linker linker = new(engine);
             linker.DefineFunction("env", "print", (Int32 str) => LoggerInstance.Msg(memory.ReadNullTerminatedString(str)));
+
+            Store store = new(engine);
+            store.SetEpochDeadline(1);
             Instance instance = linker.Instantiate(store, module);
             memory = instance.GetMemory("memory")!;
-            Action startRoutine = instance.GetAction("start")!;
+            Action setupRoutine = instance.GetAction("setup")!;
             Action loopRoutine = instance.GetAction("loop")!;
-            startRoutine();
 
-            LoggerInstance.Msg("Initialized.");
+            store.SetEpochDeadline(1);
+            new Timer(_ => engine.IncrementEpoch(), null, 1, Timeout.Infinite);
+            try
+            {
+                setupRoutine();
+            }
+            catch (WasmtimeException)
+            {
+                LoggerInstance.Msg("setup took too long");
+            }
+            for (int i = 0; i < 32; i++)
+            {
+                store.SetEpochDeadline(1);
+                new Timer(_ => engine.IncrementEpoch(), null, 1, Timeout.Infinite);
+                try
+                {
+                    loopRoutine();
+                }
+                catch (WasmtimeException)
+                {
+                    LoggerInstance.Msg("loop took too long");
+                }
+            }
         }
     }
 }

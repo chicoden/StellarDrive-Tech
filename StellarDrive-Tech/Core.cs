@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using Wasmtime;
 using MelonLoader;
-using System.Diagnostics;
 
 [assembly: MelonInfo(typeof(StellarDrive_Tech.Core), "StellarDrive Tech", "1.0.0", "oneshade", null)]
 [assembly: MelonGame("CuriousOwlGames", "StellarDrive")]
@@ -10,54 +9,14 @@ namespace StellarDrive_Tech
 {
     public class Core : MelonMod
     {
-        private static string _compilerPath;
-        private static string _linkerPath;
-
         public override void OnInitializeMelon()
         {
-            string gameRoot = Directory.GetParent(Application.dataPath).FullName;
-            _compilerPath = Path.Combine(gameRoot, "UserLibs/clang-23.1.4/x86_64-pc-windows-msvc/clang++.exe");
-            _linkerPath = Path.Combine(gameRoot, "UserLibs/clang-23.1.4/x86_64-pc-windows-msvc/wasm-ld.exe");
-
             string projectRoot = Path.Combine(Application.persistentDataPath, "programs/hello");
-
-            using (
-                Process proc = Process.Start(
-                    new ProcessStartInfo()
-                    {
-                        CreateNoWindow = true,
-                        UseShellExecute = false,
-                        RedirectStandardError = true,
-                        WorkingDirectory = projectRoot,
-                        FileName = _compilerPath,
-                        Arguments = "--target=wasm32 -fno-exceptions -nostdlibinc -nostdinc -nostdlib -c hello.cpp -o hello.o"
-                    }
-                )
-            )
-            {
-                proc.WaitForExit();
-                LoggerInstance.Msg(proc.StandardError.ReadToEnd());
-                LoggerInstance.Msg("compiler exited with code " + proc.ExitCode.ToString());
-            }
-
-            using (
-                Process proc = Process.Start(
-                    new ProcessStartInfo()
-                    {
-                        CreateNoWindow = true,
-                        UseShellExecute = false,
-                        RedirectStandardError = true,
-                        WorkingDirectory = projectRoot,
-                        FileName = _linkerPath,
-                        Arguments = "hello.o --no-entry --export=setup --export=loop --initial-memory=131072 --no-growable-memory -o hello.wasm"
-                    }
-                )
-            )
-            {
-                proc.WaitForExit();
-                LoggerInstance.Msg(proc.StandardError.ReadToEnd());
-                LoggerInstance.Msg("linker exited with code " + proc.ExitCode.ToString());
-            }
+            TinyCC cc = new();
+            cc.SetErrorCallback((string error) => LoggerInstance.Msg(error));
+            cc.AddFile(Path.Combine(projectRoot, "hello.c"));
+            cc.OutputFile(Path.Combine(projectRoot, "hello.wasm"));
+            cc.Dispose();
 
             Engine engine = new(
                 new Config()
@@ -78,7 +37,7 @@ namespace StellarDrive_Tech
             Action loopRoutine = instance.GetAction("loop")!;
 
             store.SetEpochDeadline(1);
-            new Timer(_ => engine.IncrementEpoch(), null, 1, Timeout.Infinite);
+            new Timer(_ => engine.IncrementEpoch(), null, 2, Timeout.Infinite);
             try
             {
                 setupRoutine();
@@ -90,7 +49,7 @@ namespace StellarDrive_Tech
             for (int i = 0; i < 32; i++)
             {
                 store.SetEpochDeadline(1);
-                new Timer(_ => engine.IncrementEpoch(), null, 1, Timeout.Infinite);
+                new Timer(_ => engine.IncrementEpoch(), null, 2, Timeout.Infinite);
                 try
                 {
                     loopRoutine();

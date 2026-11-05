@@ -578,6 +578,7 @@
 
 	<ItemGroup>
 		<Compile Include="Core.cs" />
+		<Compile Include="TinyCC.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -586,6 +587,8 @@
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Exec Command="COPY &quot;$(TargetPath)&quot; &quot;$(ProjectDir)..\StellarDrive Demo\Mods&quot;" />
+        <Exec Command="cmake -S &quot;$(ProjectDir)..\minicc&quot; -B &quot;$(ProjectDir)..\minicc\build&quot; -DMINICC_BUILD_WASM32_TCC=OFF -DMINICC_ENABLE_TESTING=OFF -DMINICC_BOUNDS_CHECK=OFF -DMINICC_NATIVE_TARGET=wasm32" />
+        <Exec Command="cmake --build &quot;$(ProjectDir)..\minicc\build&quot;" />
         <Exec Command="python &quot;$(ProjectDir)copy_userlibs.py&quot;" />
 	</Target>
 </Project>

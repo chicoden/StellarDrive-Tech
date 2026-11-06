@@ -1,8 +1,1 @@
-.vs
-StellarDrive-Tech/bin
-StellarDrive-Tech/obj
-*.log
-*.assets
-*.resS
-**/clang++.exe
-**/wasm-ld.exe
+/.vs/

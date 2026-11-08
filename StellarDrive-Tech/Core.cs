@@ -56,6 +56,8 @@ public class Core : MelonMod
         string userDataRoot = Path.Combine(Directory.GetParent(Application.dataPath).FullName, "UserData/SDTech");
         _assetManager = new(Path.Combine(userDataRoot, "AssetBundles"));
 
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         string programsRoot = Path.Combine(userDataRoot, "Programs");
         string projectName = "hello";
         string projectRoot = Path.Combine(programsRoot, projectName);
@@ -137,20 +139,50 @@ public class Core : MelonMod
 
     public override void OnSceneWasLoaded(int buildIndex, string sceneName)
     {
-        if (buildIndex != 1) return;
-        CreateMicrocontrollerPart();
+        switch (buildIndex)
+        {
+            case 1: // MainGame
+                CreateMicrocontrollerPart();
+                break;
+        }
     }
 
     public override void OnSceneWasUnloaded(int buildIndex, string sceneName)
     {
-        if (buildIndex != 1) return;
-        foreach (PartSettings partSettings in UnityEngine.Object.FindObjectsByType<PartSettings>(FindObjectsSortMode.None))
+        switch (buildIndex)
         {
-            if (partSettings.id == (ushort)PartId.Microcontroller)
-            {
-                UnityEngine.Object.Destroy(partSettings);
-            }
+            case 1:
+                Utilities.RemovePart((uint)PartId.Microcontroller);
+                break;
         }
+    }
+
+    private void ConfigureMicrocontrollerGeometry(Mesh template, ShipPartBounds bounds, Vector2 portRealEstate)
+    {
+        bounds.bounds = new Vector3(portRealEstate.x * 0.5f + 0.5f, 0.15f, portRealEstate.y * 0.5f + 0.5f);
+        bounds.center = new Vector3(0, bounds.bounds.y * 0.5f, 0);
+
+        Vector2 edgeOffset = new(bounds.bounds.x - 1.5f, bounds.bounds.z - 1.5f);
+        Vector3[] vertices = template.vertices;
+        foreach (ref Vector3 vertex in vertices.AsSpan())
+        {
+            if (Math.Abs(vertex.x) < 0.75f)
+                vertex.x *= portRealEstate.x;
+            else
+                vertex.x += edgeOffset.x * Math.Sign(vertex.x);
+
+            if (Math.Abs(vertex.z) < 0.75f)
+                vertex.z *= portRealEstate.y;
+            else
+                vertex.z += edgeOffset.y * Math.Sign(vertex.z);
+
+            vertex.y *= bounds.bounds.y;
+            vertex *= 0.5f;
+        }
+
+        template.vertices = vertices;
+        template.RecalculateBounds();
+        template.UploadMeshData(true);
     }
 
     private void CreateMicrocontrollerPart()
@@ -161,8 +193,6 @@ public class Core : MelonMod
         };
 
         ShipPartBounds bounds = part.AddComponent<ShipPartBounds>();
-        bounds.bounds = new Vector3(1.5f, 1.0f, 1.5f);
-        bounds.center = new Vector3(0.0f, 0.0f, 0.0f);
 
         {
             // -------------------------------- VISUALS --------------------------------
@@ -173,6 +203,7 @@ public class Core : MelonMod
 
             {
                 GameObject partVisuals = _assetManager.InstantiateAsset<GameObject>("models/mcu_parts");
+                ConfigureMicrocontrollerGeometry(partVisuals.GetComponentInChildren<MeshFilter>().mesh, bounds, new Vector2(1.5f, 1.0f));
                 Utilities.MigrateMaterials(partVisuals);
                 partVisuals.name = "Microcontroller";
                 partVisuals.transform.parent = visuals.transform;
@@ -197,7 +228,7 @@ public class Core : MelonMod
                 partInteractions.AddComponent<MicrocontrollerInteraction>();
 
                 BoxCollider collider = partInteractions.AddComponent<BoxCollider>();
-                collider.size = bounds.bounds * 2;
+                collider.size = bounds.bounds;
                 collider.center = bounds.center;
             }
         }

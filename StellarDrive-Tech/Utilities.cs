@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using MelonLoader;
+using UnityEngine;
 using HarmonyLib;
 using System.Reflection;
 using Research.Interface.Values;
@@ -11,6 +12,20 @@ namespace StellarDrive_Tech;
 
 internal static class Utilities
 {
+    public static void MigrateMaterials(GameObject gameObject)
+    {
+        Shader planetObjectShader = Shader.Find("Custom/PlanetObject");
+
+        MeshRenderer[] renderers = gameObject.GetComponentsInChildren<MeshRenderer>();
+        foreach (Material material in renderers.SelectMany(renderer => renderer.materials))
+        {
+            if (material.shader.name == planetObjectShader.name)
+            {
+                material.shader = planetObjectShader;
+            }
+        }
+    }
+
     public static void AddPart(PartSettings partSettings, uint tabId, uint? rowId, ushort researchId)
     {
         ResearchSettingsList researchSettings = Resources.FindObjectsOfTypeAll<ResearchSettingsList>().First();

@@ -24,6 +24,8 @@ namespace StellarDrive_Tech;
 
 public class Core : MelonMod
 {
+    private AssetManager _assetManager;
+
     private enum ResearchId : ushort
     {
         AdvSignalProcessing = 4
@@ -51,7 +53,10 @@ public class Core : MelonMod
 
     public override void OnInitializeMelon()
     {
-        string programsRoot = "UserData/SDTech/Programs";
+        string userDataRoot = Path.Combine(Directory.GetParent(Application.dataPath).FullName, "UserData/SDTech");
+        _assetManager = new(Path.Combine(userDataRoot, "AssetBundles"));
+
+        string programsRoot = Path.Combine(userDataRoot, "Programs");
         string projectName = "hello";
         string projectRoot = Path.Combine(programsRoot, projectName);
         string projectBinaryPath = Path.Combine(projectRoot, $"{projectName}.wasm");
@@ -150,9 +155,10 @@ public class Core : MelonMod
 
     private void CreateMicrocontrollerPart()
     {
-        GameObject part = new("Microcontroller Part");
-        part.transform.parent = null;
-        part.SetActive(false);
+        GameObject part = new("Microcontroller")
+        {
+            hideFlags = HideFlags.HideAndDontSave
+        };
 
         ShipPartBounds bounds = part.AddComponent<ShipPartBounds>();
         bounds.bounds = new Vector3(1.5f, 1.0f, 1.5f);
@@ -163,9 +169,15 @@ public class Core : MelonMod
             GameObject visuals = new("Visuals");
             visuals.transform.parent = part.transform;
 
-            ///visuals.AddComponent<MyVisuals>();
+            visuals.AddComponent<MicrocontrollerVisuals>();
 
             {
+                GameObject partVisuals = _assetManager.InstantiateAsset<GameObject>("models/mcu_parts");
+                Utilities.MigrateMaterials(partVisuals);
+                partVisuals.name = "Microcontroller";
+                partVisuals.transform.parent = visuals.transform;
+                partVisuals.transform.localPosition = bounds.center;
+                partVisuals.transform.localRotation = Quaternion.identity;
             }
 
             // ------------------------------ INTERACTIONS -----------------------------
@@ -182,17 +194,16 @@ public class Core : MelonMod
                 };
                 partInteractions.transform.parent = interactions.transform;
 
-                ///partInteractions.AddComponent<MyInteractions>();
+                partInteractions.AddComponent<MicrocontrollerInteraction>();
 
                 BoxCollider collider = partInteractions.AddComponent<BoxCollider>();
-                collider.size = new Vector3(1.5f, 1.0f, 1.5f);
-                collider.center = new Vector3(0.0f, 0.0f, 0.0f);
+                collider.size = bounds.bounds * 2;
+                collider.center = bounds.center;
             }
-
-            // add socket objects
         }
 
         PartSettings partSettings = ScriptableObject.CreateInstance<PartSettings>();
+        partSettings.name = "Microcontroller";
         partSettings.id = (ushort)PartId.Microcontroller;
         partSettings.fullLabel = "Microcontroller";
         partSettings.internalStateClass = null;///

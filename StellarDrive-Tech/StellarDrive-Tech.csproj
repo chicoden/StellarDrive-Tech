@@ -579,6 +579,8 @@
 	<ItemGroup>
 		<Compile Include="AssetManager.cs" />
 		<Compile Include="Core.cs" />
+		<Compile Include="MicrocontrollerInteraction.cs" />
+		<Compile Include="MicrocontrollerVisuals.cs" />
 		<Compile Include="TinyCC.cs" />
 		<Compile Include="Utilities.cs" />
 	</ItemGroup>

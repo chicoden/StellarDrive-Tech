@@ -19,6 +19,7 @@ public class AssetManager
         _assets = [];
         foreach (string assetBundlePath in Directory.GetFiles(assetBundlesRoot))
         {
+            // note: AssetBundle.LoadFromFile() does not work for relative paths anymore in Unity 6000
             AssetBundle assetBundle = AssetBundle.LoadFromFile(assetBundlePath);
             if (assetBundle is null)
             {

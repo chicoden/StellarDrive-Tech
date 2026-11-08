@@ -13,9 +13,9 @@ internal class TinyCC
 
     public class CompilationFailedException : Exception
     {
-        public CompilationFailedException() {}
-        public CompilationFailedException(string message) : base(message) {}
-        public CompilationFailedException(string message, Exception inner) : base(message, inner) {}
+        public CompilationFailedException() { }
+        public CompilationFailedException(string message) : base(message) { }
+        public CompilationFailedException(string message, Exception inner) : base(message, inner) { }
     }
 
     public class OutputFailedException : Exception

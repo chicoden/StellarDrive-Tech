@@ -577,6 +577,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Compile Include="AssetManager.cs" />
 		<Compile Include="Core.cs" />
 		<Compile Include="TinyCC.cs" />
 		<Compile Include="Utilities.cs" />

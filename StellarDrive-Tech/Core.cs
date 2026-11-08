@@ -1,10 +1,13 @@
-﻿using Items.Model;
+﻿using MelonLoader;
+using UnityEngine;
+using System.Reflection;
+using Items.Model;
 using Items.Services;
-using MelonLoader;
 using Ships.Interface.Model;
 using Ships.Interface.Settings;
-using System.Reflection;
-using UnityEngine;
+using Ships.Interface.Model.Parts;
+using Ships.Parts.Common;
+
 using WasmEngine = Wasmtime.Engine;
 using WasmEngineConfig = Wasmtime.Config;
 using WasmModule = Wasmtime.Module;
@@ -21,6 +24,11 @@ namespace StellarDrive_Tech;
 
 public class Core : MelonMod
 {
+    private enum ResearchId : ushort
+    {
+        AdvSignalProcessing = 4
+    }
+
     private enum PartId : ushort
     {
         Microcontroller = 8192
@@ -29,6 +37,16 @@ public class Core : MelonMod
     private enum ItemId : uint
     {
         Copper = 112
+    }
+
+    private struct Tag
+    {
+        public const string Interactable = "Interactable";
+    }
+
+    private struct LayerName
+    {
+        public const string Interactable = "Interactable";
     }
 
     public override void OnInitializeMelon()
@@ -133,7 +151,46 @@ public class Core : MelonMod
     private void CreateMicrocontrollerPart()
     {
         GameObject part = new("Microcontroller Part");
-        ///
+        part.transform.parent = null;
+        part.SetActive(false);
+
+        ShipPartBounds bounds = part.AddComponent<ShipPartBounds>();
+        bounds.bounds = new Vector3(1.5f, 1.0f, 1.5f);
+        bounds.center = new Vector3(0.0f, 0.0f, 0.0f);
+
+        {
+            // -------------------------------- VISUALS --------------------------------
+            GameObject visuals = new("Visuals");
+            visuals.transform.parent = part.transform;
+
+            ///visuals.AddComponent<MyVisuals>();
+
+            {
+            }
+
+            // ------------------------------ INTERACTIONS -----------------------------
+            GameObject interactions = new("Interactions");
+            interactions.transform.parent = part.transform;
+
+            interactions.AddComponent<DefaultShipPartInteractions>();
+
+            {
+                GameObject partInteractions = new("Microcontroller")
+                {
+                    tag = Tag.Interactable,
+                    layer = LayerMask.NameToLayer(LayerName.Interactable)
+                };
+                partInteractions.transform.parent = interactions.transform;
+
+                ///partInteractions.AddComponent<MyInteractions>();
+
+                BoxCollider collider = partInteractions.AddComponent<BoxCollider>();
+                collider.size = new Vector3(1.5f, 1.0f, 1.5f);
+                collider.center = new Vector3(0.0f, 0.0f, 0.0f);
+            }
+
+            // add socket objects
+        }
 
         PartSettings partSettings = ScriptableObject.CreateInstance<PartSettings>();
         partSettings.id = (ushort)PartId.Microcontroller;
@@ -153,6 +210,6 @@ public class Core : MelonMod
             new(itemSettingsProvider.GetItemSettingsById((uint)ItemId.Copper), 4)
         });
 
-        Utilities.AddPart(partSettings, 3, 1);
+        Utilities.AddPart(partSettings, 3, 1, (ushort)ResearchId.AdvSignalProcessing);
     }
 }

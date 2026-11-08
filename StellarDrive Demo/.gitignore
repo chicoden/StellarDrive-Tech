@@ -2,5 +2,6 @@
 !/Mods/
 !/UserData/
 !/UserLibs/
-/UserLibs/clang-23.1.4/
 !.gitignore
+/Mods/sinai-dev-UnityExplorer/Logs/
+/UserLibs/clang-23.1.4/
